@@ -2,6 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,5 +14,10 @@
   "devDependencies": {
     "@types/node": "^22.13.9",
     "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@types/mongoose": "^5.11.96",
+    "dotenv": "^16.4.7",
+    "mongoose": "^8.12.1"
   }
 }
