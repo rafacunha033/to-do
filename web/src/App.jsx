@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import TaskScreen from './pages/TaskScreen'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1 className='text-blue-500 font-bold'>Vite + React + Tailwind</h1>
-    </>
+   <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<TaskScreen />} />
+        
+    </Routes>
+   </BrowserRouter>
   )
 }
 
